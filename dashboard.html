@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OBROYland Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/image\favicon-16x16.png" href="\image\favicon-16x16.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {
+      height: auto;
+    }
+
+    .sidenav {
+      background-color: #f8f9fa;
+      height: 100%;
+      padding-top: 20px;
+    }
+
+    .sidenav h2 {
+      color: #ff6b6b;
+    }
+
+    .nav-pills>li>a {
+      color: #333;
+    }
+
+    .nav-pills>li.active>a {
+      background-color: #ff6b6b !important;
+      color: white;
+    }
+
+    .topbar {
+      background-color: #343a40;
+      color: white;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    .topbar .navbar-brand {
+      color: white;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h4 {
+      margin-top: 10px;
+    }
+
+    body {
+      background-color: #eaeaea;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4><i class="fa fa-building"></i> OBROYland Dashboard</h4>
+        </div>
+        <div class="col-sm-6 text-right">
+          <a href="login.html" class="btn btn-danger btn-sm">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <!-- Sidebar -->
+      <div class="col-sm-3 sidenav hidden-xs">
+        <h2>OBROYland</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#"><i class="fa fa-home"></i> Dashboard</a></li>
+          <li><a href="properties.html"><i class="fa fa-list"></i> My Properties</a></li>
+          <li><a href="add-property.html"><i class="fa fa-plus-circle"></i> Add Property</a></li>
+          <li><a href="about.html"><i class="fa fa-user"></i> Profile Info</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <i class="fa fa-building fa-2x text-primary"></i>
+              <h4>Total Properties</h4>
+              <p>128</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <i class="fa fa-users fa-2x text-success"></i>
+              <h4>Active Users</h4>
+              <p>76</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <i class="fa fa-handshake fa-2x text-info"></i>
+              <h4>Deals Closed</h4>
+              <p>45</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <i class="fa fa-envelope fa-2x text-danger"></i>
+              <h4>Messages</h4>
+              <p>12</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-sm-6">
+            <div class="card">
+              <h4>Latest Listings</h4>
+              <p>- Bashundhara, Flat 3B</p>
+              <p>- Mirpur DOHS, Duplex</p>
+              <p>- Gulshan, Commercial Floor</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <h4>Upcoming Viewings</h4>
+              <p>- 28 July, Bashundhara (10AM)</p>
+              <p>- 29 July, Banani (3PM)</p>
+              <p>- 30 July, Dhanmondi (12PM)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property - obroyLand</title>
+    <link rel="stylesheet" href="css/add-properties.css">
+</head>
+
+<body style="background-image: url(image/real.jpg);">
+    <header>
+        <h1>Add Property Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="properties.html">Properties</a>
+            <a href="add-property.html" class="active">Add Property</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <form id="property-form">
+            <input type="text" id="title" placeholder="Property Title" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="text" id="price" placeholder="Price" required>
+            <select id="type">
+                <option value="Rent">Rent</option>
+                <option value="Buy">Buy</option>
+                <option value="Sell">Sell</option>
+            </select>
+            <textarea id="description" placeholder="Property Description" required></textarea>
+            <button type="submit">Add Property</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <script src="js/addproperty.js"></script>
+</body>
+
+</html>
